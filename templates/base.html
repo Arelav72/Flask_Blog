@@ -17,10 +17,34 @@
 </head>
 <body>
 <div class="wrapper">
-    {% block menu %}{% endblock menu %}
+    {% block menu %}
+        <header class="header" >
+            <nav>
+            <ul class="main_menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Регистрация</a>
+                <li><a href="#">Логин</a></li>
+                <li><a href="#">Аккаунт</a>
+                <li><a href="#">Создать</a>
+                <li><a href="#">Выход</a></li>
+            </ul>
+        </nav>
+        </header>
+    {% endblock menu %}
+
     {% block content %}{% endblock content %}
-    {% block main_page %}{% endblock main_page %}
-    {% block footer %}{% endblock footer %}
+    {% block main_page %}
+    <div class="content">
+        <h2>Главная страница</h2>
+    </div>
+    {% endblock main_page %}
+    {% block footer %}
+    <footer class="footer">
+        <span>Все права защищены</span>
+        <p> &copy; Зиганчин В.Е. 2024</p>
+    </footer>
+    {% endblock footer %}
 </div>
 
 
